@@ -8,12 +8,13 @@ class String{
     int len;
     int capacity;
     int free;
-    
+
 public:
     String();
     String(char* str);
     String(String& str);
     String(std::string str);
+    ~String();
 
     String operator+ (char* str);
     String operator+ (String str);
